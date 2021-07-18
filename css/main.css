@@ -199,7 +199,6 @@ a{
 
 .half-images-1{
     height:50%;
-    /* padding:115px 127px; */
     background-image: url(../images/app-design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,7 +208,6 @@ a{
 }
 .half-images-2{
     height:50%;
-    /* padding:107px 70px; */
     background-image: url(../images/graphic-design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,7 +216,6 @@ a{
 }
 
 .web{
-    margin-top:115px;
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
@@ -232,6 +229,9 @@ a{
     line-height: 22px;
     letter-spacing: 5px;
     color: #FFFFFF;
+}
+.wrap{
+    padding:50px;
 }
 
 /* features  */
@@ -325,14 +325,14 @@ a{
     .footer-main{
         position:relative;
     }
-    .footer-main::after{
+    .ff::after{
         content: "";
         position: absolute;
         background-image: url(../images/Rectangle2.svg);
         background-repeat: no-repeat;
         width:100%;
         background-position: right top;
-        z-index:1;
+        z-index:-1;
         height:118%;
         bottom: 585px;
         /* right: -77px; */
@@ -420,9 +420,11 @@ a{
         border-radius: 15px;
     }
     .about-pic img{
-        /* width:100%; */
+        width:100%;
     }
-
+    .girl-pic img{
+        width:100%;
+    }
         /* Talent section */
     .talent{
         margin-bottom:160px;
@@ -446,12 +448,9 @@ a{
         overflow:hidden;
     }
 
-    .girl-pic{
-        
-    }
 
     .world-class{
-        padding:154px 96px;
+        padding:145px 96px;
         background-image: url(../images/girlbackground.svg);
         background-repeat: no-repeat;
         background-size:cover;
@@ -670,9 +669,7 @@ a{
     input:hover{
         border-bottom:3px solid white;
     }
-    input[type=email]:focus{
-
-    }
+  
     textarea{
         width:100%;
         background-color: transparent;

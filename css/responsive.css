@@ -5,13 +5,13 @@
         left: 640px;
     }
 
-    .half-images-2 {
+    /* .half-images-2 {
         padding: 94px 70px
     }
 
     .half-images-1 {
         padding: 92px 127px;
-    }
+    } */
 }
 
 @media (max-width:991px) {
@@ -66,40 +66,36 @@
     /* services */
     .services .row{
         flex-direction:column;
+        justify-content:center;
+        align-items:center;
     }
 
     .whole-pic {
      
         width:700px;
         text-align: center;
-        padding:53px 250px;
+        padding:0px 160px;
         margin-bottom:30px;
        
     }
     .half-pics{
         padding:0;
+        align-items:center;
     }
     .half-images-1 {
         width:700px;
-        height:200px;
+        /* height:200px; */
         text-align: center;
-        padding:53px 250px;
+        padding:0px 160px;
     }
 
     .half-images-2 {
         width:700px;
-        height:200px;
+        /* height:200px; */
         text-align: center;
-        padding:53px 250px;
+        padding:0px 160px;
     }
 
-    .web{
-        width:400px;
-    }
-    .web-text{
-        display:inline-block;
-        width:400px;
-    }
 
     /* features */
     .designers{
@@ -127,9 +123,7 @@
         flex-direction:column;
         padding: 72px 60px 72px 60px
     }
-    .lets-talk{
-      
-    }
+  
     .text-end {
         margin-top:22px;
          text-align:center!important;
@@ -201,7 +195,7 @@
                 display: none;
                 position: relative;
                 z-index: 1000;
-            background-color: #fff;
+                background-color: #fff;
                 
             }
 
@@ -282,25 +276,35 @@
 
     .whole-pic {
         max-width: 330px;
-       
+       padding:0;
     }
 
     .half-images-1 {
         max-width: 330px;
+        padding:0;
     }
 
     .half-images-2 {
         max-width: 330px;
+        padding:0;
     }
 
     .half-pics {
         max-width: 100%;
-    }
+        padding:0;
 
     .half-pics .row>* {
         padding-right: 0;
         padding-left: 0;
     } 
+
+    .web-text{
+        width:none;
+    }
+
+    .web{
+        width:none;
+    }
 
     /* features */
     .designers {
@@ -351,6 +355,9 @@
     .footer-nav {
         display: block;
     }
+    .nav-link:not(:last-child){
+        margin-right:0px;
+    }
 
     .footer-nav.nav-link {
 
@@ -391,7 +398,7 @@
     @media (max-width:565px) {
         
 
-        ..footer-first-row {
+        .footer-first-row {
             text-align: center;
         }
         
